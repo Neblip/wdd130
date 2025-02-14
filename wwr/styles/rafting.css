@@ -1,14 +1,14 @@
 :root {
     --primary-color: #8b8982;
     --secondary-color: #373f47;
-    --accent1-color: #6c91c2;
-    --accent2-color: #a3bbda;
+    --accent1-color: #8faed6;
+    --accent2-color: #c7d8ef;
     --heading-font: 'Dosis', serif;
     --text-font: 'Inter', serif;
 }
 
 header {
-    background-color: #373f47;
+    background-color:var(--secondary-color);
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -214,4 +214,86 @@ footer img {
 
 .social-links img:hover {
     transform: scale(1.2);
+}
+
+.contact {
+    max-width: 1000px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+}
+
+.contact h1, h2 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.employers {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employers figure {
+    text-align: center;
+}
+
+.form {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--accent1-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+}
+.form #name, #email, #message
+{
+    width: 425px;
+    padding: 5px;
+    margin: 10px;
+    font-family: var(--text-font);
+}
+
+.form button
+{
+    margin: 5px;
+    background-color: #8b8982;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--accent2-color);
+}
+.information {
+    grid-column: 2 / 3;
+    font-family: var(--text-font);
+    padding: 0px 25px 25px 25px;
+}
+
+.employers figcaption {
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.contact img {
+    width: 200px;
+    border-radius: 10px;
+}
+.contact img:hover {
+    transform: scale(1.3);
+}
+
+iframe {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
 }
