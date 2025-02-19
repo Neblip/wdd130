@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #8b8982;
+    --primary-color: #6c6a65;
     --secondary-color: #373f47;
     --accent1-color: #8faed6;
     --accent2-color: #c7d8ef;
@@ -296,4 +296,74 @@ iframe {
     height: 400px;
     display: block;
     margin: 0 auto;
+}
+
+.video
+{
+    display: flex;
+    
+    justify-content: center; 
+    padding: 15px;
+}
+.video video
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+.title h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--accent1-color);
+    background-color: rgba(55, 63, 71, 0.9);
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.image-row {
+    padding: 65px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center;     
+    gap: 20px; 
+    width: 100%; 
+}
+.image-row img
+{
+    width: 45%;
+}
+
+.description-row
+{
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+}
+.description-row .description-text p 
+{
+    color: var(--accent2-color);
+    padding: 25px;
+}
+.description-row .description-text h2 
+{
+    color: var(--accent2-color);
+    text-align: center;
+    padding: ;
+}
+.description-row .description-image
+{
+    padding: 25px;
+}
+.description-image img{
+    width: 100%;
 }
